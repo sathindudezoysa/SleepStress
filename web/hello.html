@@ -11,7 +11,7 @@
     <style>
         img {  
         max-width: 500px;  
-        height: 100rem; 
+        height: 1000px; 
         align-content: center; 
         }  
     </style>
@@ -41,13 +41,13 @@
                 <h5 class="card-title">How would you describe your gender?</h5>
                 <br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gender" >
+                    <input class="form-check-input" type="radio" id="gender" >
                     <label class="form-check-label" for="flexRadioDefault1">
                         Male
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gender" >
+                    <input class="form-check-input" type="radio" id="gender" >
                     <label class="form-check-label" for="flexRadioDefault2">
                       Female
                     </label>
@@ -79,7 +79,7 @@
                 <h5 class="card-title">How old are you ?</h5>
 
                 <br>
-                <input type="number" class="form-control" name="age" >
+                <input type="number" class="form-control" id="age" >
                 <br>
             </div>
 
@@ -108,7 +108,7 @@
             <div class="card-body">
                 <h5 class="card-title">What is your Occupation?</h5>
                 <br>
-                <select class="form-select" aria-label="Default select example" name="occupation">
+                <select class="form-select" aria-label="Default select example" id="occupation">
                     <option selected>Open this select menu</option>
                     <option value="1">Software Engineer</option>
                     <option value="2">Sales Representative</option>
@@ -150,7 +150,7 @@
         <div class="card-body">
             <h5 class="card-title">How much did you sleep Today?</h5>
             <br>
-            <input type="number" class="form-control" value="10" name="sleep_time">
+            <input type="number" class="form-control" value="10" id="sleep_time">
             <br>
         </div>
 
@@ -180,7 +180,7 @@
             <h5 class="card-title">Rate Your Sleep ?</h5>
             <br>
             <p>Rate Your Sleep 1 to 10</p>
-            <input type="range" class="form-range" min="1" max="10" step="1" id="fittness" name="sleep_rate">
+            <input type="range" class="form-range" min="1" max="10" step="1" id="sleep_rate" id="sleep_rate">
             <br>
         </div>
 
@@ -211,7 +211,7 @@
             <h5 class="card-title">What is your current level of fittness? </h5>
             <br>
             <p>Rate 1 to 100</p>
-            <input type="range" class="form-range" min="1" max="100" step="1" id="fittness" name="fittness">
+            <input type="range" class="form-range" min="1" max="100" step="1" id="fittness" id="fittness">
             <br>
         </div>
 
@@ -241,7 +241,7 @@
         <div class="card-body">
             <h5 class="card-title">What is your BMI category ?</h5>
             <br>
-            <select class="form-select" aria-label="Default select example" name="bmi">
+            <select class="form-select" aria-label="Default select example" id="bmi">
                 <option selected>Open this select menu</option>
                 <option value="1">Overweight</option>
                 <option value="2">Normal</option>
@@ -278,7 +278,7 @@
             <h5 class="card-title">What is your Blood Presure ?</h5>
             <br>
 
-            <input type="number" class="form-control" placeholder="up" name="blood_up">
+            <input type="number" class="form-control" placeholder="up" id="blood_up">
             <br>
 
             <input type="number" class="form-control" placeholder="down" name="blood_down">
@@ -312,7 +312,7 @@
             <h5 class="card-title">What is your Hart Rate ?</h5>
             <br>
     
-            <input type="number" class="form-control" value="70" name="hart">
+            <input type="number" class="form-control" value="70" id="hart">
 
             <br>
         </div>
@@ -342,7 +342,7 @@
 
         <div class="card-body">
             <h5 class="card-title">Daily Steps Count ?</h5>
-            <input type="number" class="form-control" value="1000" name="step">
+            <input type="number" class="form-control" value="1000" id="step">
             <br>
         </div>
 
@@ -369,7 +369,7 @@
 
         <div class="card-body">
             <h5 class="card-title">Daily Steps Count ?</h5>
-            <input type="number" class="form-control" value="1000" name="step">
+            <input type="number" class="form-control" value="1000" id="step">
             <br>
         </div>
 
@@ -380,7 +380,7 @@
                 <a class="btn btn-outline-primary" onclick="functio9()">Back</a> 
                 </div>
                 <div class="col">
-                <a class="btn btn-outline-primary" type="submit">Next</a> 
+                <a class="btn btn-outline-primary" onclick="calculate()">Next</a> 
                 </div>
             </div>
         </div>
@@ -391,6 +391,30 @@
 
 
 <script>
+
+    function calculate() {
+        var gender = document.getElementById("gender").value;
+        var age = document.getElementById("age").value;
+        var occupation = document.getElementById("occupation").value;
+        var sleep_time = document.getElementById("sleep_time").value;
+        var sleep_rate = document.getElementById("slep_rate").value;
+        var fitness = document.getElementById("fittness").value;
+        var bmi = document.getElementById("bmi").value;
+        var blood_up = document.getElementById("blood_up").value;
+        var blood_down = document.getElementById("blood_down").value;
+        var hart = document.getElementById("hart").value;
+        var step = document.getElementById("step").value;
+
+        if(sleep_time >= 1){
+            if(sleep_time ){
+
+            }
+        }
+        else{
+            if(hart < )
+        }
+
+    }
 
     function function1() {
         var element = document.getElementById("q1");
